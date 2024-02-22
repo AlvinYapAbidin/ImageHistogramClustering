@@ -5,20 +5,20 @@ This prototype demonstrates an image matcher system that utilizes OpenCV to appl
 
 How It Works
 
-    Preprocessing: Each image is resized and denoised. This step improves performance and reduces the impact of noise on histogram comparison.
-    Histogram Calculation: For each preprocessed image, a color histogram in the RGB space is calculated. This histogram represents the color distribution of the image.
-    Clustering: The system calculates the similarity between histograms using the correlation method. Images with histogram similarity above a predefined threshold are grouped into the same cluster.
-    Visualization: The application displays each cluster's images sequentially, allowing users to review grouped images.
+- Preprocessing: Each image is resized and denoised. This step improves performance and reduces the impact of noise on histogram comparison.
+- Histogram Calculation: For each preprocessed image, a color histogram in the RGB space is calculated. This histogram represents the color distribution of the image.
+- Clustering: The system calculates the similarity between histograms using the correlation method. Images with histogram similarity above a predefined threshold are grouped into the same cluster.
+- Visualization: The application displays each cluster's images sequentially, allowing users to review grouped images.
 
 Customization
 
-    Similarity Threshold: Adjust the SIMILARITY_THRESHOLD constant to change how strict the clustering is. A higher threshold requires more similarity for images to be clustered together.
-    Image Preprocessing: Modify the removeNoise function to apply different denoising techniques based on your needs.
+- Similarity Threshold: Adjust the SIMILARITY_THRESHOLD constant to change how strict the clustering is. A higher threshold requires more similarity for images to be clustered together.
+- Image Preprocessing: Modify the removeNoise function to apply different denoising techniques based on your needs.
 
 Limitations
 
-    Performance: Large image datasets may slow down processing. Consider further resizing images or utilizing parallel processing techniques.
-    Clustering Quality: The effectiveness of clustering depends on the chosen similarity threshold and the specific characteristics of the image dataset.
+- Performance: Large image datasets may slow down processing. Consider further resizing images or utilizing parallel processing techniques.
+- Clustering Quality: The effectiveness of clustering depends on the chosen similarity threshold and the specific characteristics of the image dataset.
 
 Contributing
 
