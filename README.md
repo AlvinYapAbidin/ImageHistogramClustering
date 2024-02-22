@@ -20,7 +20,6 @@ Limitations
 - Performance: Large image datasets may slow down processing. Consider further resizing images or utilizing parallel processing techniques.
 - Clustering Quality: The effectiveness of clustering depends on the chosen similarity threshold and the specific characteristics of the image dataset.
 
-Contributing
 
 Contributions are welcome! If you have improvements or bug fixes, please open a pull request or issue.
 
